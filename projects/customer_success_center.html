@@ -1,0 +1,794 @@
+<!-- 
+Project: Customer Success Center Transformation
+-->
+<!DOCTYPE html>
+<html class="">
+	<!-- HEAD: Meta tags and external CSS/JS includes -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rusty Huber - Strategic Project Management Professional</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../styles/colors.css">
+		<link rel="stylesheet" href="../styles/custom.css">
+		<link rel="stylesheet" href="../styles/animate.css">
+
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script scr="../scripts/tailwindconfig.js"></script>
+		<!-- FontAwesome configuration for SVG icon handling -->
+		<script>
+			window.FontAwesomeConfig = {
+				autoReplaceSvg: "nest", // Options: 'nest', 'remove', 'replace'
+			};
+		</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer">
+		</script>
+	</head>
+
+	<!-- BODY: Dark themed content with fixed header and mobile navigation -->
+	<body class="h-full text-base-content">
+		<div id="root" class="min-h-screen bg-gray-900 overflow-x-hidden">
+			<!-- HEADER: Fixed navigation at the top -->
+			<header id="header" class="fixed w-full bg-gray-900/90 backdrop-blur-lg border-b border-gray-800 z-50">
+				<nav class="container mx-auto px-6 py-5">
+					<!-- Navigation bar content -->
+					<div class="max-w-6xl mx-auto flex items-center justify-between">
+							<div class="text font-bold bg-gradient-to-r from-[#FFF] to-[#FFF] text-transparent bg-clip-text">Project: CS Transformation</div>
+						<a href="/" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+							<i class="fa-solid fa-house"></i>
+						</a>
+					</div>
+				</nav>
+				
+			</header>
+
+			
+			 <!-- DESKTOP NAV: Bottom navigation for larger screens -->
+			<div id="bottom-nav" class="hidden md:block fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+				<nav class="bg-gray-800/90 backdrop-blur-lg px-8 py-4 rounded-full border border-gray-700">
+					<ul class="flex space-x-8">
+						<li>
+							<a href="#overview" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-eye"></i>
+								<span class="text-xs">Overview</span>
+							</a>
+						</li>
+						<li>
+							<a href="#challenges" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-triangle-exclamation"></i>
+								<span class="text-xs">Challenges</span>
+							</a>
+						</li>
+						<li>
+							<a href="#solution" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-lightbulb"></i>
+								<span class="text-xs">Solutions</span>
+							</a>
+						</li>
+						<li>
+							<a href="#framework" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-cube"></i>
+								<span class="text-xs">Framework</span>
+							</a>
+						</li>
+						<li>
+							<a href="#results" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-chart-line"></i>
+								<span class="text-xs">Results</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<script src="../scripts/mobile.js"></script>
+
+			 <!-- MOBILE NAV: Fixed navigation at the bottom for mobile -->
+			<nav id="bottom-nav" class="fixed bottom-0 w-full bg-gray-800/95 backdrop-blur-lg border-t border-gray-700 z-50 md:hidden">
+				<div class="grid grid-cols-5 px-2 py-2">
+					<a href="#overview" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-eye text-lg mb-1"></i>
+						<span class="text-[10px]">Overview</span>
+					</a>
+					<a href="#challenges" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-triangle-exclamation text-lg mb-1"></i>
+						<span class="text-[10px]">Challenges</span>
+					</a>
+					<a href="#solution" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-lightbulb text-lg mb-1"></i>
+						<span class="text-[10px]">Solution</span>
+					</a>
+					<a href="#framework" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-cube text-lg mb-1"></i>
+						<span class="text-[10px]">Framework</span>
+					</a>
+					<a href="#results" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-chart-line text-lg mb-1"></i>
+						<span class="text-[10px]">Results</span>
+					</a>
+				</div>
+			</nav>
+
+			<!-- MAIN CONTENT: Contains Hero section, project overview, challenges, etc. -->
+			<main class="pt-20 text-white">
+
+				<!-- Hero section with animated icon and project introduction -->
+				<section
+					id="hero"
+					class="min-h-[700px] flex items-center bg-gradient-to-b from-gray-900 to-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col md:flex-row items-center gap-16">
+							<div class="md:w-1/2">
+								<div class="mb-4 flex items-center gap-2">
+									<div class="h-1 w-12 bg-[#ff6b00] rounded"></div>
+									<span class="text-[#ff6b00]">Operations Management</span>
+								</div>
+								<h1
+									class="text-3xl sm:text-4xl md:text-6xl font-bold mb-2 pb-3 bg-gradient-to-r from-[#ff6b00] to-[#ffa162] text-transparent bg-clip-text">
+									Customer Success Operations Transformation
+								</h1>
+								
+								<p class="text-xl text-gray-400 mb-5">
+									Successfully Launched Customer Success Department with Integrated Systems, Streamlined Workflows, and Measurable Performance Standards
+								</p>
+								<p class="text text-gray-400 mb-10">
+									<strong>Completed For:</strong> Neilson Marketing Services<br>
+								
+								</p>
+								<div class="flex flex-wrap gap-4">
+									<span
+										class="px-4 py-2 bg-[#ffa162]/10 text-[#ffa162] rounded-lg"
+										>Process Redesign & Automation</span
+									>
+									<span
+										class="px-4 py-2 bg-[#ffa162]/10 text-[#ffa162] rounded-lg"
+										>Systems Integration</span
+									>
+									<span
+										class="px-4 py-2 bg-[#ffa162]/10 text-[#ffa162] rounded-lg"
+										>Automated Workflows</span
+									>
+								</div>
+							</div>
+							<div class="md:w-1/2 relative px-4 md:px-0">
+                                <div class="absolute inset-0 bg-gradient-to-r from-[#ff6b00]/20 to-[#ffa162]/20 rounded-full blur-3xl"></div>
+                                <div class="relative w-64 h-64 sm:w-96 sm:h-96 mx-auto">
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <div class="w-52 h-52 sm:w-80 sm:h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+                                            <i class="fa-solid fa-headset text-7xl sm:text-9xl text-[#ff6b00]"></i>
+                                        </div>
+                                    </div>
+                                    <div class="absolute animate-spin-slow" style="animation-duration: 15s;">
+                                        <div class="w-64 h-64 sm:w-96 sm:h-96 rounded-full border-2 border-dashed border-[#ff6b00]/30 relative">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-comments text-[#ff6b00] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-phone text-[#ffa162] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-envelope text-[#ff6b00] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-video text-[#ffa162] text-xl animate-pulse"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="absolute animate-spin-slow" style="animation-duration: 20s; animation-direction: reverse;">
+                                        <div class="w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] rounded-full border-2 border-dashed border-[#ffa162]/30 relative">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-users text-[#ffa162] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-clock text-[#ff6b00] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-ticket text-[#ffa162] text-xl animate-pulse"></i>
+                                            </div>
+                                            <div class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+                                                <i class="fa-solid fa-message text-[#ff6b00] text-xl animate-pulse"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						
+							
+								
+					</div>
+				</section>
+
+				
+				<!-- Project Overview -->
+				<section
+					id="overview"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#ff6b00] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Project Overview</h2>
+						</div>
+
+						<!-- Add Summary Section -->
+						<div id="overview-summary" class="md:col-span-3 mb-12">
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<p class="text-gray-300 leading-relaxed mb-4">
+									A transformative initiative to establish and optimize a customer success department for Neilson Marketing Services, focusing on streamlining client service operations and implementing integrated technology solutions. The project encompassed complete workflow redesign, system integration, and the implementation of automated processes to enhance service delivery efficiency.
+								</p>
+								<p class="text-gray-300 leading-relaxed mb-4">
+									Our approach centered on creating a seamless connection between sales, fulfillment, and support teams through centralized communication channels and automated key processes. We implemented Freshdesk as the core platform, integrating it with existing CRM and project management tools to create a unified workflow system that eliminated redundancies and improved response times.
+								</p>
+								<p class="text-gray-300 leading-relaxed">
+									By establishing clear accountability measures and performance tracking systems, we transformed the service delivery model from a reactive to a proactive approach. This systematic overhaul resulted in significantly improved customer satisfaction metrics, reduced response times, and created a scalable foundation for handling enterprise-level client relationships.
+								</p>
+								<p class="text-gray-300 leading-relaxed mb-4 mt-8">
+									<span class="text-[#ff6b00] font-semibold">Hard-Won Lessons:</span><br> The project faced significant resistance when we attempted to centralize client communication through a new ticketing system. Long-tenured account managers had developed personalized client management approaches and viewed standardization as a threat to their client relationships. Rather than forcing adoption, I created a phased implementation plan that first focused on back-end automation that made the account managers' jobs easier without changing their client interactions. This earned trust and opened the door for account managers themselves to identify pain points the new system could solve. The key insight was recognizing that process transformation requires emotional buy-in, not just logical arguments. By allowing staff to maintain their relationship management approach while gradually introducing tools that demonstrably improved their workflow, we achieved 95% adoption without losing any team members during the transition.
+								</p>
+							</div>
+						</div>
+						
+						<div class="grid md:grid-cols-3 gap-8">
+							<div
+								id="overview-1"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-box text-2xl text-[#ff6b00]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Project Scope</h3>
+								<p class="text-gray-400">
+									Complete overhaul of client service workflows, ensuring seamless integration between sales, fulfillment, and customer support teams through centralized communication and automated key processes.
+								</p>
+							</div>
+							<div
+								id="overview-2"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-user-tie text-2xl text-[#ff6b00]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Leadership Role</h3>
+								<p class="text-gray-400">
+									Customer Success Operations Director overseeing process redesign, technology implementation, and team training.
+								</p>
+							</div>
+							<div
+								id="overview-3"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-bullseye text-2xl text-[#ff6b00]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Key Objective</h3>
+								<p class="text-gray-400">
+									Streamline operations to enhance client satisfaction and retention through improved response times and accountability.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+				<!-- Key challenges section -->
+				<section
+					id="challenges"
+					class="py-24 bg-gray-900">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#ff6b00] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Key Challenges</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div
+								id="challenge-1"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-industry text-2xl text-[#ff6b00]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">System Integration</h3>
+										<p class="text-gray-400">
+											Implementing Freshdesk automation with existing CRM and project management platforms to eliminate redundancies.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-2"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-language text-2xl text-[#ff6b00]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Process Adoption</h3>
+										<p class="text-gray-400">
+											Overcoming initial resistance to new automated workflows and securing buy-in from stakeholders across departments.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-3"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-chart-line text-2xl text-[#ff6b00]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Service Tracking</h3>
+										<p class="text-gray-400">
+											Developing clear protocols for service request tracking and accountability across multiple teams and client accounts.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-4"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-truck text-2xl text-[#ff6b00]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Team Transition</h3>
+										<p class="text-gray-400">
+											Training internal teams on new systems while maintaining ongoing client service levels during implementation.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Strategic solutions section -->
+				<section
+					id="solution"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#ff6b00] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Strategic Solutions</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-lightbulb text-2xl text-[#ff6b00]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">
+									Strategic Process Planning
+								</h3>
+								<ul class="space-y-3 text-gray-400">
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Comprehensive service workflow mapping
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Cross-departmental integration points
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Automation opportunity identification
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Performance metric development
+									</li>
+								</ul>
+							</div>
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-tools text-2xl text-[#ff6b00]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Implementation Tools</h3>
+								<ul class="space-y-3 text-gray-400">
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Freshdesk automation platform
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										CRM integration architecture
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Project management connectors
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#ff6b00]"></i>
+										Performance monitoring dashboards
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project management framework -->
+				
+				<section
+					id="framework"
+					class="py-24 bg-gray-900">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#ff6b00] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">
+								Project Management Framework
+							</h2>
+							<p class="text-xl text-gray-400 mt-4">
+								Strategic Methodology Integration for Enterprise Service Excellence
+							</p>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<p class="text-[#ff6b00] mb-6">FRAMEWORK IMPLEMENTATION</p>
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-cogs text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">
+											Stage-Gate & PMBOK
+										</h3>
+									</div>
+									<p class="text-gray-400 mb-3">Stage-Gate Implementation:</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Current State Analysis</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Solution Design and Planning</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>System Integration Development</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Pilot Program Launch</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Full-Scale Implementation</span>
+										</li>
+									</ul>
+									<p class="text-gray-400 mb-2 mt-6">PMBOK Elements:</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Scope Management for Integration</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Change Management Framework</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Stakeholder Engagement Plan</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Quality Assurance Systems</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<p class="text-[#ff6b00] mb-6">FRAMEWORK IMPLEMENTATION</p>
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-rocket text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">
+											Agile & Waterfall 
+										</h3>
+										
+									</div>
+									<p class="text-gray-400 mb-3">Waterfall Components:</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>System Architecture Setup</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Integration Development</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Security Protocol Implementation</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Documentation Framework</span>
+										</li>
+									<p class="text-gray-400 mb-3">Agile Components:</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Workflow Automation Sprints</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Training Program Iterations</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>User Feedback Cycles</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Process Optimization</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8 mt-16">
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-award text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Service Excellence Integration</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>SLA Monitoring Systems</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Response Time Optimization</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Quality Control Protocols</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Performance Metrics Tracking</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-star text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Framework Benefits</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Streamlined Service Delivery</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Enhanced Team Collaboration</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Clear Performance Metrics</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Scalable Operations</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Continuous Improvement</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="mt-16">
+							<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+								<div class="flex items-center gap-4 mb-6">
+									<div
+										class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+										<i class="fa-solid fa-tools text-2xl text-[#ff6b00]"></i>
+									</div>
+									<h3 class="text-2xl font-bold">Implementation Tools</h3>
+								</div>
+								<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Freshdesk Platform</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>CRM Integration Tools</span>
+										</li>
+									</ul>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Project Management Software</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Analytics Dashboards</span>
+										</li>
+									</ul>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Training Systems</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>SLA Reporting Tools</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project results section -->
+				<section
+					id="results"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#ff6b00] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Project Results</h2>
+						</div>
+						<div class="grid md:grid-cols-3 gap-8">
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-box-open text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Operational Performance</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Reduced average customer response time to less than 2 hours</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Achieved 95% SLA compliance across 100+ clients</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Eliminated redundant communication steps</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Streamlined handoffs between departments</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-chart-line text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Client Impact</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Increased client satisfaction metrics</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Enhanced customer retention rates</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Improved transparency in service delivery</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Consistent client experience across accounts</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#ff6b00]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-sack-dollar text-2xl text-[#ff6b00]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Business Value</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Successfully onboarded 100+ client teams to new system</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Increased team capacity without additional headcount</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Created scalable growth foundation</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#ff6b00] mt-1"></i>
+											<span>Positioned company for enterprise client acquisition</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- FOOTER: Contact information and copyright -->
+			<div
+				id="footer"
+				class="bg-gray-900 border-t border-gray-800 py-16">
+				<div class="max-w-6xl w-full mx-auto px-6">
+					<div class="flex flex-col md:flex-row justify-between items-center">
+						<div class="mb-8 md:mb-0 text-center md:text-left">
+							<h3
+								class="text-2xl font-bold bg-gradient-to-r from-[#999] to-[#fff] text-transparent bg-clip-text mb-3">
+								Rusty Huber
+							</h3>
+							<p class="text-gray-400">
+								Strategic Project Management Professional
+							</p>
+						</div>
+						<div class="flex gap-8">
+							<a
+								href="mailto:rusty.huber@gmail.com "
+								class="text-gray-400 hover:text-[#009d92] transition-colors">
+								<i class="fa-regular fa-envelope text-2xl"></i>
+							</a>
+						</div>
+					</div>
+					<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+						<p class="text-gray-500">
+							&copy; 2025 Rusty Huber. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,1212 @@
+<html class="scroll-smooth">
+	<!-- Head section: meta, title, and external resources -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Rusty Huber - Strategic Project Management Professional specializing in digital transformation and team leadership" />
+		<meta
+			property="og:title"
+			content="Rusty Huber - Strategic Project Management Professional" />
+		<meta
+			property="og:description"
+			content="Bringing people, processes, and technology together to transform complex ideas into tangible, successful results" />
+		<meta
+			property="og:type"
+			content="website" />
+		<title>Rusty Huber - Strategic Project Management Professional</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<link
+			rel="stylesheet"
+			href="styles/colors.css" />
+		<link
+			rel="stylesheet"
+			href="styles/custom.css" />
+		<link
+			rel="stylesheet"
+			href="styles/animate.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="scripts/tailwindconfig.js"></script>
+		<script>
+			window.FontAwesomeConfig = {
+				autoReplaceSvg: "nest", // Options: 'nest', 'remove', 'replace'
+			};
+		</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<style>
+			* {
+				font-family: "Inter", sans-serif;
+			}
+
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</head>
+	<!-- Body section: landing page -->
+	<body class="h-full text-base-content">
+		<!-- Navigation Bar -->
+		<div
+			id="root"
+			class="min-h-screen bg-gray-900 overflow-x-hidden">
+			<header
+				id="header"
+				class="fixed w-full bg-gray-900/90 backdrop-blur-lg border-b border-gray-800 z-50">
+				<nav class="mx-auto px-4 sm:px-6 py-5">
+					<div class="max-w-6xl mx-auto flex items-center justify-between">
+						<div
+							class="text-2xl font-bold text-white">
+							Rusty Huber
+						</div>
+						<div class="hidden md:flex space-x-8">
+							<a
+								href="#achievements"
+								class="text-gray-300 hover:text-white transition-colors"
+								>Achievements</a
+							>
+							<a
+								href="#competencies"
+								class="text-gray-300 hover:text-white transition-colors"
+								>Competencies</a
+							>
+							<a
+								href="#projects"
+								class="text-gray-300 hover:text-white transition-colors"
+								>Projects</a
+							>
+							<a
+								href="#recommendations"
+								class="text-gray-300 hover:text-white transition-colors"
+								>Recommendations</a
+							>
+						</div>
+						<button
+							id="mobile-menu-button"
+							class="md:hidden text-white">
+							<i class="fa-solid fa-bars text-xl"></i>
+						</button>
+					</div>
+				</nav>
+			</header>
+			<!-- Mobile menu backdrop -->
+			<div
+				id="mobile-menu-backdrop"
+				class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out md:hidden"></div>
+			<!-- Mobile menu -->
+			<div
+				id="mobile-menu"
+				class="fixed inset-y-0 right-0 w-64 bg-gray-900 border-l border-gray-800 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+				<div class="p-6">
+					<div class="flex justify-end">
+						<button
+							id="close-menu-button"
+							class="text-white">
+							<i class="fa-solid fa-xmark text-xl"></i>
+						</button>
+					</div>
+					<div class="mt-8 flex flex-col space-y-6">
+						<a
+							href="#achievements"
+							class="text-gray-300 hover:text-white transition-colors"
+							>Achievements</a
+						>
+						<a
+							href="#competencies"
+							class="text-gray-300 hover:text-white transition-colors"
+							>Competencies</a
+						>
+						<a
+							href="#projects"
+							class="text-gray-300 hover:text-white transition-colors"
+							>Projects</a
+						>
+						<a
+							href="#recommendations"
+							class="text-gray-300 hover:text-white transition-colors"
+							>Recommendations</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<script src="scripts/mobile.js"></script>
+
+			<!-- Main content area -->
+			<main class="pt-20 text-white">
+				<!-- HERO SECTION - UPDATED CONTENT -->
+				<section
+					id="hero"
+					class="min-h-[500px] md:min-h-[700px] py-12 md:py-32 flex items-center bg-gradient-to-b from-gray-900 to-gray-800">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col md:flex-row items-center gap-16 py-12">
+							<div class="md:w-1/2">
+								<div class="mb-4 flex items-center gap-2">
+									<div class="h-1 w-12 bg-[#009d92] rounded"></div>
+									<span class="text-[#009d92]">Welcome</span>
+								</div>
+								<h1
+									class="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-[#009d92] to-[#ffed00] text-transparent bg-clip-text">
+									Strategic Project Management Professional
+								</h1>
+								<p class="text-xl text-gray-400 mb-10">
+									Bringing people, processes, and technology together to
+									transform complex ideas into tangible, successful results
+								</p>
+								<div class="flex flex-col sm:flex-row gap-4">
+									<a
+										href="resume/Rusty Huber.pdf"
+										download
+										class="bg-gradient-to-r from-[#009d92] to-[#ffed00] text-gray-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity inline-block">
+										Download Resume
+									</a>
+									<a
+										href="#contact"
+										class="border border-gray-700 px-8 py-4 rounded-lg hover:bg-gray-800 transition-colors">
+										Contact Me
+									</a>
+								</div>
+							</div>
+							<div class="w-full md:w-1/2 relative px-4 md:px-0">
+								<div
+									class="absolute inset-0 bg-gradient-to-r from-[#009d92]/20 to-[#ffed00]/20 rounded-full blur-3xl"></div>
+								<div class="relative w-64 h-64 sm:w-96 sm:h-96 mx-auto">
+									<div
+										class="absolute inset-0 flex items-center justify-center">
+										<div
+											class="w-52 h-52 sm:w-80 sm:h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+											<div
+												class="text-8xl font-bold bg-gradient-to-r from-[#009d92] to-[#ffed00] text-transparent bg-clip-text flex gap-1">
+												<span>r</span>
+												<span>h</span>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute animate-spin-slow"
+										style="animation-duration: 15s">
+										<div
+											class="w-64 h-64 sm:w-96 sm:h-96 rounded-full border-2 border-dashed border-[#009d92]/30 relative">
+											<div
+												class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-tasks text-[#009d92] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-chart-gantt text-[#ffed00] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-clipboard-check text-[#009d92] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-diagram-project text-[#ffed00] text-xl animate-pulse"></i>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute animate-spin-slow"
+										style="
+											animation-duration: 20s;
+											animation-direction: reverse;
+										">
+										<div
+											class="w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] rounded-full border-2 border-dashed border-[#ffed00]/30 relative">
+											<div
+												class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-users-gear text-[#ffed00] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-timeline text-[#009d92] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-bullseye text-[#ffed00] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-chart-line text-[#009d92] text-xl animate-pulse"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Mobile Project Navigation Section -->
+				<section class="md:hidden bg-gray-900 py-6 mb-6">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex items-center gap-2 mb-4">
+							<div class="h-1 w-8 bg-[#009d92] rounded"></div>
+							<span class="text-[#009d92] font-semibold text-sm"
+								>Project Navigation</span
+							>
+						</div>
+						<div
+							class="flex flex-col divide-y divide-gray-700 bg-gray-800/50 rounded-xl shadow-lg">
+							<a
+								href="#achievements"
+								class="text-sm text-gray-300 hover:text-[#009d92] transition-colors px-6 py-3"
+								>Achievements</a
+							>
+							<a
+								href="#competencies"
+								class="text-sm text-gray-300 hover:text-[#009d92] transition-colors px-6 py-3"
+								>Competencies</a
+							>
+							<a
+								href="#projects"
+								class="text-sm text-gray-300 hover:text-[#009d92] transition-colors px-6 py-3"
+								>Projects</a
+							>
+							<a
+								href="#recommendations"
+								class="text-sm text-gray-300 hover:text-[#009d92] transition-colors px-6 py-3"
+								>Recommendations</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="achievements"
+					class="py-24 bg-gray-900">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#009d92] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Key Achievements</h2>
+						</div>
+						<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+							<div
+								id="achievement-1"
+								class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800 hover:border-[#009d92]/30 transition-colors">
+								<div
+									class="w-14 h-14 bg-[#009d92]/10 rounded-lg flex items-center justify-center mb-4">
+									<i class="fa-solid fa-chart-line text-2xl text-[#009d92]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-3">
+									Strategic Marketing ROI: 1000-1500%
+								</h3>
+								<p class="text-gray-400 text-sm">
+									Achieved exceptional return on digital advertising investment
+									through strategic content marketing and audience targeting,
+									managing $250+ in ad spend across multiple campaigns.
+								</p>
+							</div>
+							<div
+								id="achievement-2"
+								class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800 hover:border-[#009d92]/30 transition-colors">
+								<div
+									class="w-14 h-14 bg-[#009d92]/10 rounded-lg flex items-center justify-center mb-4">
+									<i class="fa-solid fa-video text-2xl text-[#009d92]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-3">
+									Content Production Leadership: 50+ Episodes
+								</h3>
+								<p class="text-gray-400 text-sm">
+									Successfully produced and managed over 50 episodes across two
+									production seasons for Hacker Warehouse TV, driving 750K+ views
+									and increasing hero product sales by nearly 50%.
+								</p>
+							</div>
+							<div
+								id="achievement-3"
+								class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800 hover:border-[#009d92]/30 transition-colors">
+								<div
+									class="w-14 h-14 bg-[#009d92]/10 rounded-lg flex items-center justify-center mb-4">
+									<i class="fa-solid fa-headset text-2xl text-[#009d92]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-3">
+									Operational Excellence: 95% SLA
+								</h3>
+								<p class="text-gray-400 text-sm">
+									Implemented customer success operations that achieved 95% SLA
+									compliance across 100+ clients, reducing average response time
+									from 48+ hours to under 2 hours.
+								</p>
+							</div>
+							<div
+								id="achievement-4"
+								class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800 hover:border-[#009d92]/30 transition-colors">
+								<div
+									class="w-14 h-14 bg-[#009d92]/10 rounded-lg flex items-center justify-center mb-4">
+									<i class="fa-solid fa-rocket text-2xl text-[#009d92]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-3">
+									End-to-End Product Development
+								</h3>
+								<p class="text-gray-400 text-sm">
+									Led complete product development cycle for Paragon Gear from
+									concept to market, coordinating cross-functional teams to
+									deliver on time and under budget with 95% positive feedback.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="competencies"
+					class="py-24 bg-gray-800">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#009d92] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Core Competencies</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div
+								id="competency-1"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-chess-queen text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">Strategic Leadership</h3>
+									</div>
+									<span class="text-[#009d92]">95%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#009d92] to-[#50e2d8] h-2 rounded-full w-[95%]"></div>
+								</div>
+
+								<p class="text-gray-400 mt-5">
+									Leading vision development, aligning teams with organizational
+									goals, and making data-driven decisions that balance
+									short-term results with long-term strategy.
+								</p>
+							</div>
+							<div
+								id="competency-2"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-people-group text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">
+											Cross-Functional Team Management
+										</h3>
+									</div>
+									<span class="text-[#009d92]">90%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#009d92] to-[#50e2d8] h-2 rounded-full w-[90%]"></div>
+								</div>
+								<p class="text-gray-400 mt-5">
+									Building and directing diverse teams across departments,
+									establishing clear communication protocols, and fostering
+									collaborative environments that maximize productivity.
+								</p>
+							</div>
+							<div
+								id="competency-3"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-list text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">
+											Project Planning & Execution 92%
+										</h3>
+									</div>
+									<span class="text-[#009d92]">92%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#009d92] to-[#50e2d8] h-2 rounded-full w-[92%]"></div>
+								</div>
+								<p class="text-gray-400 mt-5">
+									Developing comprehensive project plans, managing resources
+									effectively, implementing risk mitigation strategies, and
+									ensuring on-time, on-budget delivery.
+								</p>
+							</div>
+							<div
+								id="competency-4"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-chart-line text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">
+											Digital Marketing Strategy
+										</h3>
+									</div>
+									<span class="text-[#009d92]">94%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#05c4b6] to-[#50e2d8] h-2 rounded-full w-[94%]"></div>
+								</div>
+								<p class="text-gray-400 mt-5">
+									Crafting ROI-focused digital campaigns, optimizing audience
+									targeting, and leveraging analytics to continuously improve
+									performance and market penetration.
+								</p>
+							</div>
+							<div
+								id="competency-4"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-chart-line text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">Stakeholder Communication</h3>
+									</div>
+									<span class="text-[#009d92]">96%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#05c4b6] to-[#50e2d8] h-2 rounded-full w-[94%]"></div>
+								</div>
+								<p class="text-gray-400 mt-5">
+									Translating complex technical information into clear,
+									actionable insights for diverse stakeholders, maintaining
+									transparent project status updates, and managing expectations
+									effectively.
+								</p>
+							</div>
+							<div
+								id="competency-4"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex justify-between items-center mb-6">
+									<div class="flex items-center gap-4">
+										<div
+											class="w-12 h-12 bg-[#009d92]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-chart-line text-2xl text-[#009d92]"></i>
+										</div>
+										<h3 class="text-xl font-bold">
+											Budget & Resource management
+										</h3>
+									</div>
+									<span class="text-[#009d92]">94%</span>
+								</div>
+								<div class="w-full bg-gray-700 rounded-full h-2">
+									<div
+										class="bg-gradient-to-r from-[#05c4b6] to-[#50e2d8] h-2 rounded-full w-[94%]"></div>
+								</div>
+								<p class="text-gray-400 mt-5">
+									Overseeing project finances, optimizing resource allocation,
+									and implementing cost-control measures that maintain quality
+									while maximizing return on investment.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="projects"
+					class="py-24 bg-gray-900">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#009d92] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Featured Projects</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div
+								id="project-1"
+								class="group rounded-2xl bg-gray-800 overflow-hidden hover:bg-gray-750 transition-colors">
+								<div
+									class="h-64 bg-gradient-to-br from-[#009d92]/20 to-[#ffed00]/20 relative overflow-hidden">
+									<div
+										class="absolute inset-0 flex items-center justify-center">
+										<div class="md:w-1/2 relative">
+											<div
+												class="absolute inset-0 bg-gradient-to-r from-[#FF0000]/20 to-[#FF6B6B]/20 rounded-full blur-3xl"></div>
+											<div class="relative w-96 h-96 mx-auto">
+												<div
+													class="absolute inset-0 flex items-center justify-center">
+													<div
+														class="w-80 h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+														<i
+															class="fa-brands fa-youtube text-8xl text-[#FF0000]"></i>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="animation-duration: 15s">
+													<div
+														class="w-96 h-96 rounded-full border-2 border-dashed border-[#FF0000]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-video text-[#FF0000] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-camera text-[#FF6B6B] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-film text-[#FF0000] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-microphone text-[#FF6B6B] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="
+														animation-duration: 20s;
+														animation-direction: reverse;
+													">
+													<div
+														class="w-[420px] h-[420px] rounded-full border-2 border-dashed border-[#FF6B6B]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-photo-film text-[#FF6B6B] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-sliders text-[#FF0000] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-play text-[#FF6B6B] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-music text-[#FF0000] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+								</div>
+								<div class="p-8">
+									<h3 class="text-2xl font-bold">
+										Production Management & Technical Content Strategy
+									</h3>
+									<h2 class="font-bold mb-4 text-gray-400">HackerWarehouse</h2>
+									<p class="text-gray-400 mb-6">
+										Led the comprehensive project management of a specialized
+										YouTube channel in the information security space,
+										delivering 50+ episodes over two production seasons while
+										managing all aspects of production, technical content
+										development, and audience growth.
+									</p>
+									<div class="flex gap-3">
+										<span
+											class="px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] rounded-lg text-sm"
+											>Media Production</span
+										>
+										<span
+											class="px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] rounded-lg text-sm"
+											>Technical Content</span
+										>
+									</div>
+									<div class="flex gap-4 mt-6">
+										<a
+											href="projects/youtube_channel_launch.html"
+											class="bg-gradient-to-r from-[#FF0000] to-[#FF6B6B] text-gray-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+											>View Project Details -></a
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								id="project-2"
+								class="group rounded-2xl bg-gray-800 overflow-hidden hover:bg-gray-750 transition-colors">
+								<div
+									class="h-64 bg-gradient-to-br from-[#009d92]/20 to-[#ffed00]/20 relative overflow-hidden">
+									<div
+										class="absolute inset-0 flex items-center justify-center">
+										<div class="md:w-1/2 relative">
+											<div
+												class="absolute inset-0 bg-gradient-to-r from-[#8B5CF6]/20 to-[#C4B5FD]/20 rounded-full blur-3xl"></div>
+											<div class="relative w-96 h-96 mx-auto">
+												<div
+													class="absolute inset-0 flex items-center justify-center">
+													<div
+														class="w-80 h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+														<div
+															class="text-8xl bg-gradient-to-r from-[#8B5CF6] to-[#C4B5FD] text-transparent bg-clip-text">
+															<i
+																class="fa-solid fa-pen-ruler text-8xl text-[#8B5CF6]"></i>
+														</div>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="animation-duration: 15s">
+													<div
+														class="w-96 h-96 rounded-full border-2 border-dashed border-[#8B5CF6]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-compass-drafting text-[#8B5CF6] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-drafting-compass text-[#C4B5FD] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-ruler-combined text-[#8B5CF6] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-pencil text-[#C4B5FD] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="
+														animation-duration: 20s;
+														animation-direction: reverse;
+													">
+													<div
+														class="w-[420px] h-[420px] rounded-full border-2 border-dashed border-[#C4B5FD]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-cube text-[#C4B5FD] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-shapes text-[#8B5CF6] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-cubes text-[#C4B5FD] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-object-group text-[#8B5CF6] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+								</div>
+								<div class="p-8">
+									<h3 class="text-2xl font-bold">
+										End-to-End Product Development & Market Launch
+									</h3>
+									<h2 class="font-bold mb-4 text-gray-400">Paragon Gear</h2>
+									<p class="text-gray-400 mb-6">
+										Spearheaded the complete product Development and market
+										launch for a direct-to-consumer brand, managing the full
+										lifecycle from concept to commercial success
+									</p>
+									<div class="flex gap-3">
+										<span
+											class="px-4 py-2 bg-[#8B5CF6]/10 text-[#8B5CF6] rounded-lg text-sm"
+											>Product Development</span
+										>
+										<span
+											class="px-4 py-2 bg-[#8B5CF6]/10 text-[#8B5CF6] rounded-lg text-sm"
+											>Market Launch</span
+										>
+									</div>
+									<div class="flex gap-4 mt-6">
+										<a
+											href="projects/product_launch.html"
+											class="bg-gradient-to-r from-[#8B5CF6] to-[#C4B5FD] text-gray-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+											>View Project Details -></a
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								id="project-3"
+								class="group rounded-2xl bg-gray-800 overflow-hidden hover:bg-gray-750 transition-colors">
+								<div
+									class="h-64 bg-gradient-to-br from-[#009d92]/20 to-[#ffed00]/20 relative overflow-hidden">
+									<div
+										class="absolute inset-0 flex items-center justify-center">
+										<div class="md:w-1/2 relative">
+											<div
+												class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-300/20 rounded-full blur-3xl"></div>
+											<div class="relative w-96 h-96 mx-auto">
+												<div
+													class="absolute inset-0 flex items-center justify-center">
+													<div
+														class="w-80 h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+														<i
+															class="fa-solid fa-share-nodes text-8xl text-blue-700"></i>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="animation-duration: 15s">
+													<div
+														class="w-96 h-96 rounded-full border-2 border-dashed border-blue-500/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-brands fa-youtube text-blue-400 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-brands fa-instagram text-blue-300 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-brands fa-twitter text-blue-400 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-brands fa-facebook text-blue-600 text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="
+														animation-duration: 20s;
+														animation-direction: reverse;
+													">
+													<div
+														class="w-[420px] h-[420px] rounded-full border-2 border-dashed border-blue-300/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-cloud-arrow-up text-blue-300 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-chart-network text-blue-500 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-globe text-blue-400 text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-server text-blue-300 text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+								</div>
+								<div class="p-8">
+									<h3 class="text-2xl font-bold">
+										Content Marketing Program Development
+									</h3>
+									<h2 class="font-bold mb-4 text-gray-400">HackerWarehouse</h2>
+									<p class="text-gray-400 mb-6">
+										Executed a comprehensive content marketing initiative that
+										strategically positioned technical products through
+										educational content and targeted digital marketing.
+									</p>
+									<div class="flex gap-3">
+										<span
+											class="px-4 py-2 bg-blue-300/10 text-blue-700 rounded-lg text-sm"
+											>Content Marketing</span
+										>
+										<span
+											class="px-4 py-2 bg-blue-300/10 text-blue-700 rounded-lg text-sm"
+											>Digital Strategy</span
+										>
+									</div>
+									<div class="flex gap-4 mt-6">
+										<a
+											href="projects/content_hub.html"
+											class="bg-gradient-to-r from-blue-700 to-blue-300 text-gray-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+											>View Project Details -></a
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								id="project-4"
+								class="group rounded-2xl bg-gray-800 overflow-hidden hover:bg-gray-750 transition-colors">
+								<div
+									class="h-64 bg-gradient-to-br from-[#009d92]/20 to-[#ffed00]/20 relative overflow-hidden">
+									<div
+										class="absolute inset-0 flex items-center justify-center">
+										<div class="md:w-1/2 relative">
+											<div
+												class="absolute inset-0 bg-gradient-to-r from-[#ff6b00]/20 to-[#ffa162]/20 rounded-full blur-3xl"></div>
+											<div class="relative w-96 h-96 mx-auto">
+												<div
+													class="absolute inset-0 flex items-center justify-center">
+													<div
+														class="w-80 h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+														<i
+															class="fa-solid fa-headset text-8xl text-[#ff6b00]"></i>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="animation-duration: 15s">
+													<div
+														class="w-96 h-96 rounded-full border-2 border-dashed border-[#ff6b00]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-comments text-[#ff6b00] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-phone text-[#ffa162] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-envelope text-[#ff6b00] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-video text-[#ffa162] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+												<div
+													class="absolute animate-spin-slow"
+													style="
+														animation-duration: 20s;
+														animation-direction: reverse;
+													">
+													<div
+														class="w-[420px] h-[420px] rounded-full border-2 border-dashed border-[#ffa162]/30 relative">
+														<div
+															class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-users text-[#ffa162] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-clock text-[#ff6b00] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-ticket text-[#ffa162] text-xl animate-pulse"></i>
+														</div>
+														<div
+															class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+															<i
+																class="fa-solid fa-message text-[#ff6b00] text-xl animate-pulse"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+								</div>
+								<div class="p-8">
+									<h3 class="text-2xl font-bold">
+										Customer Success Operations Transformation
+									</h3>
+									<h2 class="font-bold mb-4 text-gray-400">
+										Neilson Marketing Services
+									</h2>
+									<p class="text-gray-400 mb-6">
+										Led comprehensive overhaul of client service operations,
+										implementing CRM automation and process improvements that
+										reduced response times to under 2 hours with 95% SLA
+										compliance
+									</p>
+									<div class="flex gap-3">
+										<span
+											class="px-4 py-2 bg-[#ffed00]/10 text-[#ff6b00] rounded-lg text-sm"
+											>Customer Success</span
+										>
+										<span
+											class="px-4 py-2 bg-[#ffed00]/10 text-[#ff6b00] rounded-lg text-sm"
+											>Process Optimization</span
+										>
+									</div>
+									<div class="flex gap-4 mt-6">
+										<a
+											href="projects/customer_success_center.html"
+											class="bg-gradient-to-r from-[#ff6b00] to-[#ffa162] text-gray-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+											>View Project Details -></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- RECOMMENDATIONS SECTION - UPDATED CONTENT -->
+				<section
+					id="recommendations"
+					class="py-24 bg-gray-800">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#009d92] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Recommendations</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div
+								id="recommendation-1"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center mb-6">
+									<div>
+										<h4 class="text-xl font-bold">Garrett Gee</h4>
+										<p class="text-gray-400">
+											Founder and CEO, HackerWarehouse
+										</p>
+									</div>
+								</div>
+								<p class="text-gray-400 italic mb-4">
+									"I've had the privilege of working closely with Rusty Huber
+									across multiple strategic initiatives that have significantly
+									contributed to our company's growth and market position"
+								</p>
+								<div class="recommendation-full hidden">
+									<p class="text-gray-400 mb-10">
+										<span style="font-weight: 700"
+											>Full Letter of Recommendation:</span
+										><br />
+										As the founder and CEO of HackerWarehouse, I've had the
+										privilege of working closely with Rusty Huber across
+										multiple strategic initiatives that have significantly
+										contributed to our company's growth and market position.<br /><br />
+										Rusty's leadership of our HackerWarehouse.TV channel stands
+										as one of our most successful projects to date. He
+										masterfully guided our team through the creation and
+										production of over 50 technical episodes spanning two
+										seasons, establishing our brand as a trusted authority in
+										the information security space. His ability to translate
+										complex cybersecurity concepts into engaging, accessible
+										content while maintaining technical integrity was
+										instrumental in building our dedicated audience.<br /><br />
+										Beyond video production, Rusty revolutionized our content
+										marketing strategy for HackerWarehouse.com. Under his
+										direction, we implemented a data-driven approach that
+										yielded an exceptional 1000-1500% return on our digital
+										advertising investment. His strategic vision for our content
+										ecosystem, combined with his methodical approach to audience
+										targeting, dramatically improved our conversion rates and
+										strengthened our position in the security research
+										community.<br /><br />
+										What particularly impresses me about Rusty is his rare
+										combination of creative thinking and analytical precision.
+										He possesses an innate ability to see both the big picture
+										and the critical details, ensuring that projects remain
+										strategically aligned while meeting tactical objectives. His
+										project management methodology brings structure without
+										stifling innovation—a balance that's particularly valuable
+										in our rapidly evolving industry.<br /><br />
+										Rusty's cross-functional leadership skills are equally
+										noteworthy. He effectively bridges technical and marketing
+										teams, fostering collaborative environments where expertise
+										is shared and leveraged efficiently. His clear communication
+										style and proactive problem-solving approach have
+										consistently kept projects on track, even when facing
+										significant challenges.<br /><br />
+										Any organization looking for a project management
+										professional who delivers measurable results through
+										strategic planning, team leadership, and flawless execution
+										would benefit tremendously from Rusty's expertise. I give
+										him my highest recommendation and am confident he will
+										continue to exceed expectations in future endeavors.<br /><br />Garret
+										Williams <br /><bold>Founder & CEO</bold> <br /><bold
+											>HackerWarehouse</bold
+										>
+									</p>
+								</div>
+								<button
+									onclick="this.previousElementSibling.classList.toggle('hidden'); this.textContent = this.textContent === 'Read More' ? 'Show Less' : 'Read More';"
+									class="px-4 py-2 bg-[#009d92]/10 text-[#009d92] rounded-lg text-sm hover:bg-[#009d92]/20 transition-colors">
+									Read More
+								</button>
+							</div>
+							<div
+								id="recommendation-2"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center mb-6">
+									<div>
+										<h4 class="text-xl font-bold">Laura Farkas</h4>
+										<p class="text-gray-400">
+											VP of Operations, Neilson Marketing Services
+										</p>
+									</div>
+								</div>
+								<p class="text-gray-400 italic mb-4">
+									"I can attest that [Rusty] exemplifies excellence in strategic
+									project management. Rusty consistently delivers outstanding
+									results through his exceptional ability to balance vision with
+									execution.""
+								</p>
+								<div class="recommendation-full hidden">
+									<p class="text-gray-400 mb-10">
+										<span style="font-weight: 700"
+											>Full Letter of Recommendation:</span
+										><br /><br />Having collaborated with Rusty Huber for over a
+										decade, I can attest that he exemplifies excellence in
+										strategic project management. Rusty consistently delivers
+										outstanding results through his exceptional ability to
+										balance vision with execution. His project management
+										strengths are evident in three critical areas:<br /><br />
+										<strong>Strategic Leadership & Client Management</strong
+										><br />
+										Rusty excels at building strong stakeholder relationships
+										while maintaining clear sight of business objectives. His
+										skill in negotiating complex proposals has secured major
+										clients and partnerships across media production, digital
+										marketing, and product development initiatives.<br /><br />
+										<strong>Cross-Functional Team Coordination</strong><br />
+										What distinguishes Rusty is his talent for orchestrating
+										diverse teams toward common goals. He translates complex
+										objectives into actionable plans, proactively identifies
+										potential roadblocks, and maintains transparent
+										communication channels that foster collaboration and
+										accountability.<br /><br />
+										<strong>Resource Optimization & Delivery Excellence</strong
+										><br />
+										Rusty consistently demonstrates mastery in managing multiple
+										concurrent priorities without sacrificing quality. His
+										meticulous approach to budget control, timeline management,
+										and quality assurance has resulted in exceptional project
+										outcomes and high client retention rates.<br /><br />
+										For organizations seeking a project management professional
+										who combines technical expertise with outstanding
+										interpersonal skills, Rusty Huber is an exceptional
+										candidate. His proven track record of delivering complex
+										projects while maintaining strong stakeholder relationships
+										would make him a valuable asset to any forward-thinking
+										team.<br /><br />Laura Farkas <br /><bold
+											>VP of Operations</bold
+										>
+										<br /><bold>Neilson Marketing Services</bold>
+									</p>
+								</div>
+								<button
+									onclick="this.previousElementSibling.classList.toggle('hidden'); this.textContent = this.textContent === 'Read More' ? 'Show Less' : 'Read More';"
+									class="px-4 py-2 bg-[#009d92]/10 text-[#009d92] rounded-lg text-sm hover:bg-[#009d92]/20 transition-colors">
+									Read More
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Contact Section -->
+				<section
+					id="contact"
+					class="py-24 bg-gray-900">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#009d92] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Contact Me</h2>
+						</div>
+						<div class="flex flex-col items-center gap-6">
+							<a
+								href="mailto:rusty.huber@gmail.com "
+								class="flex items-center gap-4 text-xl text-gray-400 hover:text-[#009d92] transition-colors">
+								<i class="fa-regular fa-envelope text-2xl"></i>
+								rusty.huber@gmail.com
+							</a>
+							<a
+								href="tel:+17145863778"
+								class="flex items-center gap-4 text-xl text-gray-400 hover:text-[#009d92] transition-colors">
+								<i class="fa-solid fa-phone text-2xl"></i>
+								(714) 586-3778
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer Section -->
+			<div
+				id="footer"
+				class="bg-gray-900 border-t border-gray-800 py-16">
+				<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+					<div class="flex flex-col md:flex-row justify-between items-center">
+						<div class="mb-8 md:mb-0 text-center md:text-left">
+							<h3
+								class="text-2xl font-bold bg-gradient-to-r from-[#999] to-[#fff] text-transparent bg-clip-text mb-3">
+								Rusty Huber
+							</h3>
+							<p class="text-gray-400">
+								Strategic Project Management Professional
+							</p>
+						</div>
+						<div class="flex gap-8">
+							<a
+								href="mailto:rusty.huber@gmail.com "
+								class="text-gray-400 hover:text-[#009d92] transition-colors">
+								<i class="fa-regular fa-envelope text-2xl"></i>
+							</a>
+						</div>
+					</div>
+					<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+						<p class="text-gray-500">
+							&copy; 2025 Rusty Huber. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

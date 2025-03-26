@@ -1,0 +1,902 @@
+<!-- 
+Project: YouTube Channel Launch Portfolio Page
+-->
+<!DOCTYPE html>
+<html class="">
+	<!-- Head section containing all external resources and configurations -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rusty Huber - Strategic Project Management Professional</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../styles/colors.css">
+		<link rel="stylesheet" href="../styles/custom.css">
+		<link rel="stylesheet" href="../styles/animate.css">
+
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script scr="../scripts/tailwindconfig.js"></script>
+		<!-- FontAwesome configuration for SVG icon handling -->
+		<script>
+			window.FontAwesomeConfig = {
+				autoReplaceSvg: "nest", // Options: 'nest', 'remove', 'replace'
+			};
+		</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer">
+		</script>
+	</head>
+
+	<!-- Main body with dark theme styling -->
+	<body class="h-full text-base-content">
+		<div id="root" class="min-h-screen bg-gray-900 overflow-x-hidden">
+			<!-- HEADER: Fixed top navigation for the project -->
+			<header id="header" class="fixed w-full bg-gray-900/90 backdrop-blur-lg border-b border-gray-800 z-50">
+				<nav class="container mx-auto px-6 py-5">
+					<div class="max-w-6xl mx-auto flex items-center justify-between">
+						<div class="text font-bold bg-gradient-to-r from-[#FFF] to-[#FFF] text-transparent bg-clip-text">
+							Project: YT Channel Launch
+						</div>
+						<a href="/" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+							<i class="fa-solid fa-house"></i>
+						</a>
+					</div>
+				</nav>
+			</header>
+			<!-- DESKTOP NAV: Bottom navigation for larger screens -->
+			<div id="bottom-nav" class="hidden md:block fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+				<nav class="bg-gray-800/90 backdrop-blur-lg px-8 py-4 rounded-full border border-gray-700">
+					<ul class="flex space-x-8">
+						<li>
+							<a href="#overview" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-eye"></i>
+								<span class="text-xs">Overview</span>
+							</a>
+						</li>
+						<li>
+							<a href="#challenges" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-triangle-exclamation"></i>
+								<span class="text-xs">Challenges</span>
+							</a>
+						</li>
+						<li>
+							<a href="#solution" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-lightbulb"></i>
+								<span class="text-xs">Solutions</span>
+							</a>
+						</li>
+						<li>
+							<a href="#framework" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-cube"></i>
+								<span class="text-xs">Framework</span>
+							</a>
+						</li>
+						<li>
+							<a href="#results" class="text-gray-300 hover:text-white transition-colors flex flex-col items-center gap-1">
+								<i class="fa-solid fa-chart-line"></i>
+								<span class="text-xs">Results</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<script src="../scripts/mobile.js"></script>
+			<!-- MOBILE NAV: Bottom navigation for mobile devices -->
+			<nav id="bottom-nav" class="fixed bottom-0 w-full bg-gray-800/95 backdrop-blur-lg border-t border-gray-700 z-50 md:hidden">
+				<div class="grid grid-cols-5 px-2 py-2">
+					<a href="#overview" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-eye text-lg mb-1"></i>
+						<span class="text-[10px]">Overview</span>
+					</a>
+					<a href="#challenges" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-triangle-exclamation text-lg mb-1"></i>
+						<span class="text-[10px]">Challenges</span>
+					</a>
+					<a href="#solution" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-lightbulb text-lg mb-1"></i>
+						<span class="text-[10px]">Solution</span>
+					</a>
+					<a href="#framework" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-cube text-lg mb-1"></i>
+						<span class="text-[10px]">Framework</span>
+					</a>
+					<a href="#results" class="flex flex-col items-center justify-center p-2 text-gray-300 hover:text-white transition-colors">
+						<i class="fa-solid fa-chart-line text-lg mb-1"></i>
+						<span class="text-[10px]">Results</span>
+					</a>
+				</div>
+			</nav>
+			<!-- MAIN CONTENT: Project details such as hero, overview, challenges, etc. -->
+			<main class="pt-20 text-white">
+				<!-- Hero section with animated YouTube icon and project introduction -->
+				<section
+    id="hero"
+    class="min-h-[500px] md:min-h-[700px] flex items-center bg-gradient-to-b from-gray-900 to-gray-800">
+					<div class="w-full max-w-6xl mx-auto px-4 sm:px-6">
+						<div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+							<div class="w-full md:w-1/2">
+								<div class="mb-4 flex items-center gap-2">
+									<div class="h-1 w-12 bg-[#FF0000] rounded"></div>
+									<span class="text-[#FF0000]">YouTube Production</span>
+								</div>
+								<h1
+									class="text-3xl sm:text-4xl md:text-6xl font-bold mb-2 pb-3 bg-gradient-to-r from-[#FF0000] to-[#FF6B6B] text-transparent bg-clip-text">
+									Video Production Management
+								</h1>
+								
+								<p class="text-xl text-gray-400 mb-5">
+									Transforming technical expertise into engaging media while achieving measurable business results.
+								</p>
+								<p class="text text-gray-400 mb-10">
+									<strong>Completed For:</strong> Hacker Warehouse TV<br>
+								<strong>URL:</strong> <a href="https://www.youtube.com/c/HackerWarehouse" style="text-decoration: underline">YouTube Channel</a>
+								</p>
+								<div class="flex flex-wrap gap-2 sm:gap-4">
+									<span
+										class="px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] rounded-lg"
+										>50+ Deliverables</span
+									>
+									<span
+										class="px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] rounded-lg"
+										>2 Production Seasons</span
+									>
+									<span
+										class="px-4 py-2 bg-[#FF6B6B]/10 text-[#FF6B6B] rounded-lg"
+										>Cross-Functional Team</span
+									>
+								</div>
+							</div>
+							<div class="w-full md:w-1/2 relative px-4 md:px-0">
+								<div class="absolute inset-0 bg-gradient-to-r from-[#FF0000]/20 to-[#FF6B6B]/20 rounded-full blur-3xl"></div>
+								<div class="relative w-64 h-64 sm:w-96 sm:h-96 mx-auto">
+									<div class="absolute inset-0 flex items-center justify-center">
+										<div class="w-52 h-52 sm:w-80 sm:h-80 rounded-full border-4 border-gray-800 bg-gray-900 flex items-center justify-center">
+											<i class="fa-brands fa-youtube text-8xl text-[#FF0000]"></i>
+										</div>
+									</div>
+									<div
+										class="absolute animate-spin-slow"
+										style="animation-duration: 15s">
+										<div
+											class="w-64 h-64 sm:w-96 sm:h-96 rounded-full border-2 border-dashed border-[#FF0000]/30 relative">
+											<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-video text-[#FF0000] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-camera text-[#FF6B6B] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-film text-[#FF0000] text-xl animate-pulse"></i>
+											</div>
+											<div
+												class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-microphone text-[#FF6B6B] text-xl animate-pulse"></i>
+											</div>
+										</div>
+									</div>
+									<div
+										class="absolute animate-spin-slow"
+										style="animation-duration: 20s;
+											animation-direction: reverse;">
+										<div class="w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] rounded-full border-2 border-dashed border-[#FF6B6B]/30 relative">
+											<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-photo-film text-[#FF6B6B] text-xl animate-pulse"></i>
+											</div>
+											<div class="absolute top-1/2 -right-3 transform translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-sliders text-[#FF0000] text-xl animate-pulse"></i>
+											</div>
+											<div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-gray-900 p-3 rounded-full">
+												<i class="fa-solid fa-play text-[#FF6B6B] text-xl animate-pulse"></i>
+											</div>
+											<div class="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-gray-900 p-3 rounded-full">
+												<i
+													class="fa-solid fa-music text-[#FF0000] text-xl animate-pulse"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+				
+
+				<!-- Project overview section with key aspects of the YouTube channel project -->
+				<section
+					id="overview"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Project Overview</h2>
+						</div>
+
+						<!-- Add Summary Section -->
+						<div id="overview-summary" class="md:col-span-3 mb-12">
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<p class="text-gray-300 leading-relaxed mb-4">
+									A comprehensive video production initiative focused on establishing Hacker Warehouse TV's YouTube presence in the cybersecurity space. The project involved developing and managing the full production lifecycle for technical video content, from concept development through post-production and channel optimization.
+								</p>
+								<p class="text-gray-300 leading-relaxed mb-4">
+									Our approach balanced technical depth with audience engagement by creating a structured content framework that appealed to both beginner and advanced cybersecurity professionals. We implemented a hybrid project management methodology that combined traditional planning for season-level strategy with agile sprints for episode production, enabling consistent quality across 50+ deliverables.
+								</p>
+								<p class="text-gray-300 leading-relaxed">
+									Through careful coordination between technical experts, production teams, and marketing specialists, we successfully translated complex cybersecurity concepts into engaging video content. This strategic approach resulted in significant channel growth, improved product demonstration effectiveness, and established HackerWarehouse as an authoritative voice in the cybersecurity community.
+								</p>
+								<p class="text-gray-300 leading-relaxed mb-4 mt-8">
+									<span class="text-[#f74747] font-semibold">Hard-Won Lessons:</span> <br>I encountered a significant challenge when working with our sole subject matter expert, who was essential to the content's technical accuracy but had no prior experience with video production workflows. I implemented a structured approach for collaboration between technical writers and the production team to generate detailed blocking and staging for technology demonstrations prior to filming days, which reduced on-set time significantly and eliminated costly reshoots. The biggest lesson was that bridging the gap between deep technical expertise and engaging video content requires a carefully designed communication framework. By developing specialized pre-production protocols that respected both the technical integrity requirements and production constraints, we not only delivered all 50+ episodes on schedule but established a repeatable system that maximized our SME's limited availability while maintaining content quality. This approach transformed what could have been a bottleneck into a streamlined process that continued to serve the company long after the initial project concluded.
+								</p>
+							</div>
+						</div>
+
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+							<div
+								id="overview-1"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-video text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Project Scope</h3>
+								<p class="text-gray-400">
+									End-to-end management of YouTube channel development, content
+									strategy, and production workflow for technical cybersecurity
+									content
+								</p>
+							</div>
+							<div
+								id="overview-2"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-user-tie text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Leadership Role</h3>
+								<p class="text-gray-400">
+									Creative Director & Producer managing content strategy,
+									production design, and team coordination across 15+ members
+								</p>
+							</div>
+							<div
+								id="overview-3"
+								class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-chart-pie text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Key Objective</h3>
+								<p class="text-gray-400">
+									Strengthen market position and enhance brand authority in the
+									cybersecurity sector through engaging technical content
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Key challenges section highlighting project complexities -->
+				<section
+					id="challenges"
+					class="py-24 bg-gray-900">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Key Challenges</h2>
+						</div>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+							<div
+								id="challenge-1"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-globe text-2xl text-[#f74747]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Technical Complexity</h3>
+										<p class="text-gray-400">
+											Translating complex cybersecurity concepts into
+											accessible, engaging video content while maintaining
+											technical accuracy
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-2"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-users text-2xl text-[#f74747]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Audience Engagement</h3>
+										<p class="text-gray-400">
+											Reaching and retaining a highly technical audience
+											typically resistant to traditional marketing approaches
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-3"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i class="fa-solid fa-film text-2xl text-[#f74747]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Production Quality</h3>
+										<p class="text-gray-400">
+											Maintaining consistent high-quality production values
+											across 50 episodes while managing tight deadlines
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								id="challenge-4"
+								class="p-8 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-800">
+								<div class="flex items-start gap-6">
+									<div
+										class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+										<i
+											class="fa-solid fa-people-group text-2xl text-[#f74747]"></i>
+									</div>
+									<div>
+										<h3 class="text-xl font-bold mb-4">Team Coordination</h3>
+										<p class="text-gray-400">
+											Coordinating multiple stakeholders including technical
+											experts, production crew, and marketing team
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Strategic solutions section showcasing project management approaches -->
+				<section
+					id="solution"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Strategic Solutions</h2>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i
+										class="fa-solid fa-calendar-check text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">
+									Strategic Content Planning
+								</h3>
+								<ul class="space-y-3 text-gray-400">
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Structured project charter and timeline
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Milestone-based planning for two seasons
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Resource allocation across team
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Quality standards documentation
+									</li>
+								</ul>
+							</div>
+							<div class="p-8 rounded-2xl bg-gray-900 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-chart-line text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Implementation Tools</h3>
+								<ul class="space-y-3 text-gray-400">
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Season roadmap tracking
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Sprint burndown charts
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Cross-functional coordination tools
+									</li>
+									<li class="flex items-center gap-2">
+										<i class="fa-solid fa-check text-[#f74747]"></i>
+										Quality control checklists
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project management framework detailing hybrid methodology -->
+				<section
+					id="framework"
+					class="py-24 bg-gray-900">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">
+								Project Management Framework
+							</h2>
+							<p class="text-xl text-gray-400 mt-4">
+								Hybrid Approach Combining Traditional and Agile Methodologies
+							</p>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<p class="text-[#f74747] mb-6">FRAMEWORK IMPEMENTATION</p>
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-sitemap text-2xl text-[#f74747]"></i>
+										</div>
+
+										<h3 class="text-2xl font-bold">
+											Traditional PM Framework Implementation
+										</h3>
+									</div>
+									<p class="text-gray-400 mb-6">Season Level Management</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Structured project charter and timeline</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Milestone-based planning for two seasons</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Resource allocation across 15+ team members</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Risk management framework</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Quality standards documentation</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<p class="text-[#f74747] mb-6">FRAMEWORK IMPEMENTATION</p>
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-arrows-spin text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">
+											Agile/Scrum Implementation
+										</h3>
+									</div>
+									<p class="text-gray-400 mb-6">Episode Level Management</p>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>2-week sprints for episode production</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Daily stand-ups with production team</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Sprint planning for episode batches</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Regular retrospectives for improvement</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Story point estimation for episode complexity</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="grid md:grid-cols-2 gap-8 mt-16">
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-wrench text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Implementation Tools</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Season roadmap and milestone tracking</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Sprint burndown charts</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Cross-functional team coordination</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Quality control checklists</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="space-y-8">
+								<div class="p-8 rounded-2xl bg-gray-800 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i class="fa-solid fa-star text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Framework Benefits</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Structured budget and resource management</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Flexible content iteration process</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Efficient stakeholder reporting</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Continuous quality improvement</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project results section showing key achievements and metrics -->
+				<section
+					id="results"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">Project Results</h2>
+						</div>
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-chart-line text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Marketing Performance</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>300% increase in subscriber base over two seasons</span
+											>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>85% average viewer retention rate</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>Successful penetration of technical cybersecurity
+												market</span
+											>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Established strong brand presence on YouTube</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-lightbulb text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Content Impact</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>Successfully translated complex technical
+												concepts</span
+											>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Enhanced audience understanding of products</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Created reusable educational content library</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>Built engaged community of cybersecurity
+												enthusiasts</span
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="space-y-6">
+								<div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+									<div class="flex items-center gap-4 mb-6">
+										<div
+											class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center">
+											<i
+												class="fa-solid fa-sack-dollar text-2xl text-[#f74747]"></i>
+										</div>
+										<h3 class="text-2xl font-bold">Business Value</h3>
+									</div>
+									<ul class="space-y-4 text-gray-300">
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>45% increase in featured product sales
+												post-episodes</span
+											>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>Strengthened market position in cybersecurity
+												sector</span
+											>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span>Improved product demonstration effectiveness</span>
+										</li>
+										<li class="flex items-start gap-3">
+											<i class="fa-solid fa-check text-[#f74747] mt-1"></i>
+											<span
+												>Enhanced brand authority in technical community</span
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project management highlights showcasing key management achievements -->
+				<section
+					id="pm-highlights"
+					class="py-24 bg-gray-900">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">
+								Project Management Highlights
+							</h2>
+						</div>
+						<div class="grid md:grid-cols-3 gap-8">
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-lightbulb text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Strategic Planning</h3>
+								<p class="text-gray-400">
+									Developed and executed comprehensive video content strategy
+								</p>
+							</div>
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-users-gear text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Resource Management</h3>
+								<p class="text-gray-400">
+									Coordinated 15+ member cross-functional team
+								</p>
+							</div>
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-chart-line text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Data-Driven Decisions</h3>
+								<p class="text-gray-400">
+									Utilized analytics for content optimization
+								</p>
+							</div>
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i
+										class="fa-solid fa-shield-halved text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Risk Management</h3>
+								<p class="text-gray-400">
+									Balanced technical accuracy with audience engagement
+								</p>
+							</div>
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-comments text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">
+									Stakeholder Communication
+								</h3>
+								<p class="text-gray-400">
+									Aligned technical experts with production teams
+								</p>
+							</div>
+							<div class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+								<div
+									class="w-12 h-12 bg-[#f74747]/10 rounded-lg flex items-center justify-center mb-6">
+									<i class="fa-solid fa-award text-2xl text-[#f74747]"></i>
+								</div>
+								<h3 class="text-xl font-bold mb-4">Quality Control</h3>
+								<p class="text-gray-400">
+									Maintained consistent high standards across 50+ episodes
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Skills demonstrated section showing project management competencies -->
+				<section
+					id="skills"
+					class="py-24 bg-gray-800">
+					<div class="max-w-6xl w-full mx-auto px-6">
+						<div class="flex flex-col items-center mb-16">
+							<div class="h-1 w-12 bg-[#f74747] rounded mb-4"></div>
+							<h2 class="text-4xl font-bold text-center">
+								Skills Demonstrated
+							</h2>
+						</div>
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-video text-[#f74747]"></i>
+									<h3 class="font-bold">Video Production Management</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-lightbulb text-[#f74747]"></i>
+									<h3 class="font-bold">Content Strategy Development</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-code text-[#f74747]"></i>
+									<h3 class="font-bold">Technical Communication</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-users text-[#f74747]"></i>
+									<h3 class="font-bold">Team Leadership</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-arrows-spin text-[#f74747]"></i>
+									<h3 class="font-bold">Agile/Traditional PM Hybrid</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-handshake text-[#f74747]"></i>
+									<h3 class="font-bold">Stakeholder Management</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-coins text-[#f74747]"></i>
+									<h3 class="font-bold">Budget Optimization</h3>
+								</div>
+							</div>
+							<div
+								class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+								<div class="flex items-center gap-3 mb-2">
+									<i class="fa-solid fa-chart-simple text-[#f74747]"></i>
+									<h3 class="font-bold">Analytics and Performance</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+				<!-- FOOTER: Contains contact info and copyright -->
+			<div
+				id="footer"
+				class="bg-gray-900 border-t border-gray-800 py-16">
+				<div class="max-w-6xl w-full mx-auto px-6">
+					<div class="flex flex-col md:flex-row justify-between items-center">
+						<div class="mb-8 md:mb-0 text-center md:text-left">
+							<h3
+								class="text-2xl font-bold bg-gradient-to-r from-[#999] to-[#fff] text-transparent bg-clip-text mb-3">
+								Rusty Huber
+							</h3>
+							<p class="text-gray-400">
+								Strategic Project Management Professional
+							</p>
+						</div>
+						<div class="flex gap-8">
+							<a
+								href="mailto:rusty.huber@gmail.com "
+								class="text-gray-400 hover:text-[#009d92] transition-colors">
+								<i class="fa-regular fa-envelope text-2xl"></i>
+							</a>
+						</div>
+					</div>
+					<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+						<p class="text-gray-500">
+							&copy; 2025 Rusty Huber. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <styl>
+	</body>
+</html>
